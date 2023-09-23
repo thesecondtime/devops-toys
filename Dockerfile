@@ -1,9 +1,9 @@
 FROM ubuntu:20.04
 
-RUN apt-get update && apt-get install -y python3.9
-RUN apt-get update && apt-get install -y python3-pip
-RUN apt-get update && apt-get install -y nodejs
-RUN apt-get update && apt-get install -y npm
+RUN apt-get update && apt-get install -y --no-install-recommends python3.9
+RUN apt-get install -y --no-install-recommends python3-pip
+RUN apt-get install -y --no-install-recommends nodejs
+RUN apt-get install -y --no-install-recommends npm
 
 RUN apt-get clean
 
