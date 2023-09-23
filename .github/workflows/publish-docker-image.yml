@@ -15,7 +15,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t devtoys .
-          dcker images
+          docker images
 
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
