@@ -16,7 +16,9 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t devtoys .
+        run: |
+          docker build -t devtoys .
+          dcker images
 
       - name: Push Docker image
         run: docker push alvarogarciapiz/devtoys
