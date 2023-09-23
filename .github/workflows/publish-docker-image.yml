@@ -18,7 +18,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t devtoys .
-          dcker images
+          docker images
 
       - name: Push Docker image
         run: docker push alvarogarciapiz/devtoys
