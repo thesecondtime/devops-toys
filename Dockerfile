@@ -18,4 +18,4 @@ COPY . /app
 #RUN npm install  # Si tienes un archivo package.json para instalar las dependencias del proyecto
 
 #RUN npm start
-CMD ["python3", "app.py"]
+CMD ["flask", "run", "--host=0.0.0.0"]
